@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="searchForm">
+      <label for="amiiboNameSearchInput">Search: </label>
+      <input
+        type="text"
+        id="amiiboNameSearchInput"
+        name="amiiboNameSearchInput"
+        placeholder="Search By Name"
+      />
+      <div class="button">
+        <img src="assets/search.svg" alt="" />
+      </div>
+    </div>
+
+    <div id="filterButtons">
+      <div class="mario">Mario</div>
+      <div class="zelda">Zelda</div>
+      <div class="link">Link</div>
+      <div class="all">Show All</div>
+    </div>
+
+    <div id="amiibosContainer"></div>
+
+    <div id="floatingModal">
+      <div class="amiiboCount">
+        <div class="title">Filtered Amiibos</div>
+        <div class="number"></div>
+      </div>
+
+      <!-- <div class="averageamiiboPrice">
+        <div class="title">Average Price</div>
+        <div class="number"></div>
+      </div> -->
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

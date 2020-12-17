@@ -1,0 +1,153 @@
+div#amiibosContainer {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  /* outline: 1px solid black; */
+}
+
+div#amiibosContainer > div.amiiboContainer {
+  width: calc((100% - 32px) / 3 - 32px);
+  /* outline: 1px solid red; */
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 123, 0);
+  background: radial-gradient(
+    circle at 15% 15%,
+    rgb(255, 136, 0) 0%,
+    rgb(255, 149, 0) 0%,
+    rgb(255, 162, 0) 0%,
+    rgb(255, 170, 0) 0%,
+    rgb(255, 183, 0) 0%,
+    rgb(255, 195, 0) 35%,
+    rgb(255, 208, 0) 35%,
+    rgb(255, 221, 0) 100%,
+    rgb(255, 234, 0) 100%
+  );
+  color: white;
+  padding: 16px;
+  overflow: hidden;
+  border-radius: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+}
+
+div#amiibosContainer > div.amiiboContainer > * + * {
+  margin-top: 32px;
+}
+
+div#amiibosContainer > div.amiiboContainer > img {
+  height: 250px;
+}
+
+div#amiibosContainer > div.amiiboContainer > div.name {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  border-left: 5px solid white;
+  padding-left: 16px;
+  align-self: stretch;
+}
+
+div#amiibosContainer > div.amiiboContainer > div.release {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+div#amiibosContainer > div.amiiboContainer > div.price {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  align-self: flex-end;
+}
+
+div#amiibosContainer > div.amiiboContainer > div.gameSeries {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div#searchForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+div#searchForm > label {
+  font-family: Monserrat;
+  font-size: 32px;
+  margin-right: 16px;
+}
+
+div#searchForm > input#amiiboNameSearchInput {
+  flex: 1;
+  border: none;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  margin-right: 16px;
+}
+
+div#searchForm > div.button {
+  height: 30px;
+  width: 30px;
+}
+
+div#searchForm > div.button > img {
+  width: 100%;
+  height: 100%;
+}
+
+div#filterButtons {
+  width: 1200px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+div#filterButtons > div {
+  outline: 1px solid yellow;
+  width: calc((100% - 48px) / 4);
+  background-color: rgb(255, 208, 0);
+  padding: 24px 0;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  border-radius: 24px;
+}
+
+div#floatingModal {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  outline: 1px solid orange;
+  background-color: red;
+  padding: 16px;
+  display: flex;
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  place-items: center;
+  flex-direction: row;
+}
